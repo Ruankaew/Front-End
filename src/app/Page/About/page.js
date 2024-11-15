@@ -2,14 +2,16 @@ import React from 'react'
 
 export default function AboutPage() {
     return (
-        <div>
-            <h1>About Us</h1>
-            <div style={{ padding: '1rem', backgroundColor: '#f0f0f0' }}>
-                <p>
-                    We are a company that values excellence and innovation. Our team is dedicated to providing
-                    the best service.
-                </p>
-            </div>
+        <div
+            id="about"
+            style={{
+                height: '500px',
+                backgroundColor: '#e6f7ff',
+                marginTop: '20px',
+            }}
+        >
+            <h2>About Section</h2>
+            <p>This is the About section.</p>
         </div>
     )
 }

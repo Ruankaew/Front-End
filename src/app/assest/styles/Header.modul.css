@@ -1,0 +1,15 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+  }
+  
+
+.demo-logo{
+    width: 300px;
+    margin-right: 15px;
+    background: #001529;
+    height: 50px;
+    border-radius: 20px;
+}

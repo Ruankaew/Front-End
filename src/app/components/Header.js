@@ -1,12 +1,12 @@
-
+"use client";
 import React, { useState, useEffect } from 'react';
 import "../assest/styles/Header.modul.css";
 import { Button, ConfigProvider, Layout, Menu, Drawer } from 'antd';
 import { DownOutlined, MenuOutlined, RightOutlined } from '@ant-design/icons';
-
-
+import { useRouter } from 'next/navigation';
 
 export default function Header() {
+  const router = useRouter(); 
   const { Header } = Layout;
   const [current, setCurrent] = useState('home');
   const [drawerVisible, setDrawerVisible] = useState(false);
@@ -20,7 +20,8 @@ export default function Header() {
           Home
         </>
       ),
-      key: 'home'
+      key: 'home',
+      path: '/'
     },
     {
       label: (
@@ -52,7 +53,8 @@ export default function Header() {
           About
         </>
       ),
-      key: 'about'
+      key: 'about',
+      path: '/Page/About'
     },
     {
       label: (
@@ -60,11 +62,13 @@ export default function Header() {
           Contact
         </>
       ),
-      key: 'contact'
+      key: 'contact',
+      path: '/Page/Contact'
     },
   ];
 
   const onClick = (e) => {
+    const clickedItem = items.find(item => item.key === e.key);
     setCurrent(e.key);
     const element = document.getElementById(e.key);
     if (element) {
@@ -72,7 +76,9 @@ export default function Header() {
         top: element.offsetTop - 80,
         behavior: 'smooth',
       });
-    }
+    };
+
+    window.history.pushState(null, '', `${clickedItem.path}`);
   };
 
   const onOpenChange = (keys) => {
@@ -131,7 +137,7 @@ export default function Header() {
               theme='light'
               mode="horizontal"
               onClick={onClick}
-              onOpenChange={onOpenChange} 
+              onOpenChange={onOpenChange}
               selectedKeys={[current]}
               items={items}
               style={{
@@ -169,7 +175,7 @@ export default function Header() {
                       onClick(e);
                       setDrawerVisible(false);
                     }}
-                    onOpenChange={onOpenChange} 
+                    onOpenChange={onOpenChange}
                     selectedKeys={[current]}
                     items={items}
                   />

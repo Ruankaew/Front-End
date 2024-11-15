@@ -1,0 +1,19 @@
+body {
+    font-family: Kanit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header,
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
