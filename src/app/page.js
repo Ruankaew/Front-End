@@ -1,11 +1,12 @@
 "use client";
-import React ,{useEffect } from 'react';
+import React, { useEffect } from 'react';
 import myImage from './assest/image/download.jpg';
 import './assest/styles/Home.modul.css';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import AboutPage from './Page/About/page';
 import ContactPage from './Page/Contact/page';
 import { useRouter } from 'next/router';
+import styled from 'styled-components';
 
 export default function Home() {
     return (
@@ -13,8 +14,8 @@ export default function Home() {
             <div
                 id="home"
                 style={{
-                    minHeight: '94vh',
-                    background: `url(${myImage.src})`,
+                    minHeight: '100vh',
+                    background: `url(https://www.jaycapital.co.th/wp-content/uploads/2024/04/07.png?id=29618) !important`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     display: 'flex',
@@ -31,7 +32,7 @@ export default function Home() {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        background: 'linear-gradient(145deg, yellow 0%, green 50%, yellow 100%)',
+                        background: 'linear-gradient(145deg, yellow 0%, green 50%, yellow 130%)',
                         opacity: 0.6,
                         zIndex: 1,
                     }}
@@ -43,15 +44,15 @@ export default function Home() {
                         zIndex: 2,
                         position: "absolute",
                         right: "250px",
-                        top: "300px",
-                        width: "400px",
+                        top: "480px",
+                        width: "356px",
                     }}
                 >
                     <h1>Welcome to Our Website!</h1>
                     <p>Discover innovative products and solutions.</p>
                 </div>
 
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", position: "relative" }}>
+                <div className="fixed-element" style={{ display: "flex", justifyContent: "center", alignItems: "center", position: "relative" }}>
                     <div
                         style={{
                             width: '60px',
@@ -104,7 +105,7 @@ export default function Home() {
                             zIndex: 3,
                         }}
                     >
-                        <ArrowRightOutlined style={{ fontSize: '17px', fontWeight: "bolder", transform: 'scaleX(1.5)' }} />
+                        <ArrowRightOutlined style={{ fontSize: '17px', fontWeight: "bolder", transform: 'scaleX(1.5)' , cursor: "pointer"}} />
                     </span>
                 </div>
 
@@ -116,15 +117,21 @@ export default function Home() {
                         textAlign: 'center',
                         marginTop: 'auto',
                         zIndex: 2,
-                        width: '97.9%',
+                        // width: '97.9%',
                     }}
                 >
                     <p>&copy; 2023 Your Company Name</p>
                 </footer>
             </div>
+            <LineStyle />
 
             <AboutPage />
             <ContactPage />
         </>
     );
 }
+
+const LineStyle = styled("div")`
+    height: 20px;
+    background: #e4b16e;
+`;

@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutPage() {
     return (
         <div
-            id="about"
+            id="trackrecord"
             style={{
                 height: '500px',
                 backgroundColor: '#e6f7ff',

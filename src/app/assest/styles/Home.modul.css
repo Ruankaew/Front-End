@@ -1,8 +1,49 @@
 @keyframes spinText {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fixed-element {
+  left: 500px;
+  top: 660px;
+}
+
+@media (max-width: 1056px) {
+  .fixed-element {
+    left: 360px;
+    top: 660px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fixed-element {
+    left: 260px;
+    top: 660px;
+  }
+}
+
+@media (max-width: 800px) {
+  .fixed-element {
+    left: 237px;
+    top: 660px;
+  }
+}
+
+@media (max-width: 560px) {
+  .fixed-element {
+    left: 165px;
+    top: 660px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixed-element {
+    left: 114px;
+    top: 660px;
+  }
+}

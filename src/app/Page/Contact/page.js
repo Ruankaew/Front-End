@@ -3,7 +3,7 @@ import React from 'react'
 export default function ContactPage() {
     return (
         <div
-            id="contact"
+            id="contactus"
             style={{
                 height: '500px',
                 backgroundColor: '#fff0f6',
