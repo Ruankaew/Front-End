@@ -8,6 +8,7 @@ import { Button, Flex, Layout } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import AboutPage from './Page/Trackrecords/page';
 import ContactPage from './Page/Contactus/page';
+import FooterPage from './contents/FooterPage';
 
 
 
@@ -180,106 +181,9 @@ export default function Home() {
                         </span>
                     </div>
 
-                    <Footer
-                        style={{
-                            backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                            color: 'white',
-                            padding: '20px',
-                            textAlign: 'center',
-                            marginTop: 'auto',
-                            zIndex: 2,
-                            width: '100%',
-                            boxSizing: 'border-box',
-                            height: "100px",
-                            display: "flex",
-                            alignItems: "center",
-                            overflow: "hidden",
-                        }}
-                    >
-                        {/* ส่วนที่ไม่เลื่อน */}
-                        <div
-                            style={{
-                                marginRight: "10px",
-                                width: "20%",
-                                height: "70px",
-                                backgroundColor: "red",
-                                flexShrink: 0,
-                            }}
-                        >
-                            อันนี้ไม่เลื่อน
-                        </div>
-
-                        <div
-                            style={{
-                                overflow: "hidden",
-                                width: "100%",
-                                alignItems: "center",
-                                whiteSpace: "nowrap",
-                                justifyContent: "flex-start",
-                                flexGrow: 1,
-                            }}
-                        >
-                            <div
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "flex-start",
-                                    transform: `translateX(-${scrollPosition * 1}px)`,
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        marginRight: "10px",
-                                        width: "100%",
-                                        height: "70px",
-                                        backgroundColor: "rgba(255, 255, 255)",
-                                        color: "black",
-                                        whiteSpace: "nowrap"
-                                    }}
-                                >
-                                    Ant Design ©{new Date().getFullYear()} Created by Ant UED
-                                </div>
-                                <div
-                                    style={{
-                                        marginRight: "10px",
-                                        width: "100%",
-                                        height: "70px",
-                                        backgroundColor: "rgba(255, 255, 255)",
-                                        color: "black",
-                                        whiteSpace: "nowrap",
-                                    }}
-                                >
-                                    dadadadawdad
-                                </div>
-                                <div
-                                    style={{
-                                        marginRight: "10px",
-                                        width: "100%",
-                                        height: "70px",
-                                        backgroundColor: "rgba(255, 255, 255)",
-                                        color: "black",
-                                        whiteSpace: "nowrap",
-                                    }}
-                                >
-                                    dadadadawdad
-                                </div>
-                                <div
-                                    style={{
-                                        marginRight: "10px",
-                                        width: "100%",
-                                        height: "70px",
-                                        backgroundColor: "rgba(255, 255, 255)",
-                                        color: "black",
-                                        whiteSpace: "nowrap",
-                                    }}
-                                >
-                                    Ant Design ©{new Date().getFullYear()} Created by Ant UED
-                                </div>
-                            </div>
-                        </div>
-                    </Footer>
+                    <FooterPage scrollPosition={scrollPosition}/>
                 </div>
-                
+
                 <LineStyle />
 
                 <AboutPage />

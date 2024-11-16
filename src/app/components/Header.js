@@ -194,12 +194,14 @@ export default function Header() {
               boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
               padding: !modeMobile ? '0 160px' : '0 20px',
               height: '90px',
+              backdropFilter: isSticky ? 'blur(2px)' : 'none',
+              transition: 'backdrop-filter 0.3s ease',
             }}
           >
             <div class="demo-logo">
-              <img 
-                src={Image_logo.src} 
-                alt="Logo" 
+              <img
+                src={Image_logo.src}
+                alt="Logo"
                 style={{
                   width: "60%",
                   height: "100%",
