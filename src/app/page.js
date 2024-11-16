@@ -1,7 +1,7 @@
 "use client";
 import './assest/styles/Home.modul.css';
 import React, { useEffect, useState } from 'react';
-import myImage from './assest/image/download.jpg';
+import myImage from './assest/image/Frame_482199.png';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { Button, Flex, Layout } from 'antd';
@@ -99,7 +99,30 @@ export default function Home() {
                     />
 
                     <div
-                        className="container"
+                        style={{
+                            zIndex: 2,
+                            position: 'absolute',
+                            right: 'calc(45% + 30px)',
+                            top: 'calc(30vh - 20px)',
+                            width: "37%",
+                            height: "45%",
+                            border: '3px solid green',
+                            overflow: "hidden",
+                            borderRadius: "5%",
+                        }}
+                    >
+                        <img
+                            src={myImage.src}
+                            alt="Logo"
+                            style={{
+                                width: "auto",
+                                height: "100%",
+                                objectFit: "cover"
+                            }}
+                        />
+                    </div>
+
+                    <div
                         style={{
                             fontSize: "clamp(8px, 2vw, 16px)",
                             zIndex: 2,
@@ -181,7 +204,7 @@ export default function Home() {
                         </span>
                     </div>
 
-                    <FooterPage scrollPosition={scrollPosition}/>
+                    <FooterPage scrollPosition={scrollPosition} />
                 </div>
 
                 <LineStyle />

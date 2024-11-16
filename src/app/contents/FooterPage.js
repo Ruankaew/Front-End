@@ -21,7 +21,6 @@ export default function FooterPage({scrollPosition}) {
                 overflow: "hidden",
             }}
         >
-            {/* ส่วนที่ไม่เลื่อน */}
             <div
                 style={{
                     marginRight: "10px",
