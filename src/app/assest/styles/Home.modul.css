@@ -9,11 +9,11 @@
 }
 
 .fixed-element {
-  left: 500px;
-  top: 660px;
+  /* left: 490px; */
+  /* top: 550px; */
 }
 
-@media (max-width: 1056px) {
+/* @media (max-width: 1056px) {
   .fixed-element {
     left: 360px;
     top: 660px;
@@ -46,4 +46,4 @@
     left: 114px;
     top: 660px;
   }
-}
+} */

@@ -6,7 +6,13 @@
 }
 
 .demo-logo {
-  width: 300px;
+  display: flex;
+  overflow: hidden;
+  width: 20%;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  /* width: 20%;
   margin-right: 15px;
   background-image: url(../image/Frame_482199.png);
   background-size: cover;
@@ -15,5 +21,20 @@
   border-radius: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+}
+
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item:hover::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu:hover::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item-active::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-active::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item-open::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-open::after {
+  border-bottom-color: transparent !important;
+}
+
+
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item-selected::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-selected::after {
+  border-bottom-color: transparent !important;
 }

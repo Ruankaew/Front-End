@@ -5,14 +5,30 @@ import { Button, ConfigProvider, Layout, Menu, Drawer } from 'antd';
 import { ArrowRightOutlined, DownOutlined, MenuOutlined, RightOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/navigation';
 import styled from 'styled-components';
+import Image_logo from "../assest/image/Frame_482199.png"
 
 const StyledMenu = styled(Menu)`
   .ant-menu-item:hover::after {
     border-bottom-color: transparent !important;
   }
 
+  .ant-menu-submenu:hover .ant-menu-title::after {
+    border-bottom-color: transparent !important;
+  }
+
   .ant-menu-item-active::after,
-  .ant-menu-item-selected::after {
+  .ant-menu-item-selected::after,
+  .ant-menu-submenu-active .ant-menu-title::after,
+  .ant-menu-submenu-selected .ant-menu-title::after {
+    border-bottom-color: transparent !important;
+  }
+
+  .ant-menu-submenu .ant-menu-item:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+  }
+
+  .ant-menu-submenu .ant-menu-item:hover::after {
     border-bottom-color: transparent !important;
   }
 `;
@@ -91,7 +107,7 @@ export default function Header() {
             }}
             onMouseEnter={(e) => e.target.style.color = "black"}
             onMouseLeave={(e) => e.target.style.color = "black"}
-          > 
+          >
             Get in touch  <ArrowRightOutlined style={{ fontSize: '14px', fontWeight: "bolder", color: "black" }} />
           </Button>
         </>
@@ -112,7 +128,7 @@ export default function Header() {
       });
     };
 
-    window.history.pushState(null, '', `${clickedItem.path}`);
+    // window.history.pushState(null, '', `${clickedItem.path}`);
   };
 
   const onOpenChange = (keys) => {
@@ -180,7 +196,19 @@ export default function Header() {
               height: '90px',
             }}
           >
-            <div className="demo-logo" ></div>
+            <div class="demo-logo">
+              <img 
+                src={Image_logo.src} 
+                alt="Logo" 
+                style={{
+                  width: "60%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: "20px"
+                }}
+              />
+            </div>
+
 
             <StyledMenu
               theme='light'
@@ -189,8 +217,9 @@ export default function Header() {
                 onClick(e);
               }}
               onOpenChange={onOpenChange}
-              // selectedKeys={[current]}
-              selectedKeys={[]}
+              className="custom-menu"
+              selectedKeys={[current]}
+              // selectedKeys={[]}
               items={items}
               style={{
                 flex: 1,
@@ -198,9 +227,8 @@ export default function Header() {
                 maxWidth: "720px",
                 backgroundColor: 'transparent',
                 border: 'none',
-                display: modeMobile ? 'none' : '',
+                display: modeMobile ? 'none' : 'flex',
                 fontWeight: "500",
-                display: "flex",
                 justifyContent: "space-around"
               }}
             />
@@ -230,7 +258,8 @@ export default function Header() {
                   visible={drawerVisible}
                   bodyStyle={{ padding: 0 }}
                 >
-                  <Menu
+                  <StyledMenu
+                    className="custom-menu"
                     theme='light'
                     mode="inline"
                     onClick={(e) => {
