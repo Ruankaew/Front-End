@@ -32,7 +32,7 @@ export default function Home() {
     let [leftValueSpiner, setLeftValueSpiner] = useState('calc(6% + 28.9%)');
     let [rightValueSpiner, setRightValueSpiner] = useState('');
     let [bottomValueSpiner, setBottomValueSpiner] = useState('');
-    let [topValueSpiner, setTopValueSpiner] = useState('calc(110px + 50vh)');
+    let [topValueSpiner, setTopValueSpiner] = useState('calc(-210px + 50vh)');
 
     useEffect(() => {
         const handleResize = () => {
@@ -92,7 +92,7 @@ export default function Home() {
                             left: 0,
                             right: 0,
                             bottom: 0,
-                            // background: 'linear-gradient(145deg, yellow 0%, green 50%, yellow 130%)',
+                            background: 'linear-gradient(145deg, yellow -20%, green 50%, yellow 130%)',
                             opacity: 0.6,
                             zIndex: 1,
                         }}
@@ -204,8 +204,8 @@ export default function Home() {
                         </span>
                     </div>
 
-                    <FooterPage scrollPosition={scrollPosition} />
                 </div>
+                <FooterPage scrollPosition={scrollPosition} />
 
                 <LineStyle />
 
