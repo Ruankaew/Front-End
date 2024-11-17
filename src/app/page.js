@@ -21,6 +21,11 @@ export default function Home() {
     const { Content, Footer } = Layout;
     const [scrollPosition, setScrollPosition] = useState(0);
     const TextValuesLoop = 'JJ JIRA S LIBRARY';
+    const words = ['MA', 'IPO', 'DDD', 'WWW'];
+    const [currentWord, setCurrentWord] = useState(0);
+
+
+
     //----------------------------------Text-------------------------------------
     let [rightValue, setRightValue] = useState('calc(1% + 30px)');
     let [leftValue, setLeftValue] = useState('calc(6% + 28.9%)');
@@ -66,6 +71,14 @@ export default function Home() {
             window.removeEventListener("scroll", handleScroll); // ลบ scroll listener
             window.removeEventListener('resize', handleResize); // ลบ resize listener
         };
+    }, []);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentWord((prev) => (prev + 1) % words.length);
+        }, 5000);
+
+        return () => clearInterval(interval);
     }, []);
 
     return (
@@ -118,8 +131,14 @@ export default function Home() {
                         }}
                     >
                         <h1>YOUR TRUSTED PARTNER IN</h1>
-                        <div>
-                            <h1>MA</h1>
+                        <div className="rotating-container">
+                            {/* ใช้ key สำหรับการ re-render */}
+                            <div
+                                className="rotating-word"
+                                key={currentWord} // เพิ่ม key เพื่อให้ React render ใหม่ทุกครั้ง
+                            >
+                                {words[currentWord]}
+                            </div>
                         </div>
                     </div>
 
