@@ -42,12 +42,12 @@ export default function Home() {
                 // iPhone
                 setRightValue('calc(-6% + 30px)');
                 setLeftValueSpiner('calc(6% + 16.9%)');
-                setTopValueSpiner('calc(70px + 50vh)');
+                setTopValueSpiner('calc(-360px + 50vh)');
             } else if (screenWidth <= 768) {
                 // Tablet
                 setRightValue('calc(0% + 30px)');
                 setLeftValueSpiner('calc(6% + 13.9%)');
-                setTopValueSpiner('calc(70px + 50vh)');
+                setTopValueSpiner('calc(-360px + 50vh)');
             } else {
                 // Desktop
                 setRightValue('calc(1% + 30px)');
@@ -98,12 +98,37 @@ export default function Home() {
                         }}
                     />
 
+
+
+                    <div
+                        className="text"
+                        style={{
+                            zIndex: 2,
+                            position: 'absolute',
+                            right: 'calc(52% + 30px)',
+                            top: 'calc(20% - 20px)',
+                            width: '38%%',
+                            overflow: 'hidden',
+                            borderRadius: '5%',
+                            fontFamily: "fangsong",
+                            fontSize: "20px",
+                            color: 'white',
+                            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
+                            fontWeight: 'bold',
+                        }}
+                    >
+                        <h1>YOUR TRUSTED PARTNER IN</h1>
+                        <div>
+                            <h1>MA</h1>
+                        </div>
+                    </div>
+
                     <div
                         style={{
                             zIndex: 2,
                             position: 'absolute',
-                            right: 'calc(45% + 30px)',
-                            top: 'calc(30vh - 20px)',
+                            right: 'calc(52% + 30px)',
+                            top: 'calc(45% - 20px)',
                             width: "37%",
                             height: "45%",
                             border: '3px solid green',

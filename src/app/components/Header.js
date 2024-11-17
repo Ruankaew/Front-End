@@ -184,7 +184,6 @@ export default function Header() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-around',
-              // backgroundColor: isSticky ? 'rgb(187 185 185 / 90%)' : 'transparent',
               backgroundColor: isSticky ? 'rgb(187 185 185 / 90%)' : 'white',
               position: 'fixed',
               top: 0,
@@ -192,7 +191,8 @@ export default function Header() {
               right: 0,
               zIndex: 1000,
               boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
-              padding: !modeMobile ? '0 160px' : '0 20px',
+              // padding: !modeMobile ? '0 160px' : '0 20px',
+              padding: !modeMobile ? '0 0' : '0 20px',
               height: '90px',
               backdropFilter: isSticky ? 'blur(2px)' : 'none',
               transition: 'backdrop-filter 0.3s ease',
@@ -203,7 +203,7 @@ export default function Header() {
                 src={Image_logo.src}
                 alt="Logo"
                 style={{
-                  width: "60%",
+                  width: "50%",
                   height: "100%",
                   objectFit: "cover",
                   borderRadius: "20px"

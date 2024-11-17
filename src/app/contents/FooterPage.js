@@ -73,7 +73,7 @@ export default function FooterPage({scrollPosition}) {
                             whiteSpace: "nowrap",
                         }}
                     >
-                        dadadadawdad
+                        Ant Design ©{new Date().getFullYear()} Created by Ant UED
                     </div>
                     <div
                         style={{
@@ -85,7 +85,7 @@ export default function FooterPage({scrollPosition}) {
                             whiteSpace: "nowrap",
                         }}
                     >
-                        dadadadawdad
+                        Ant Design ©{new Date().getFullYear()} Created by Ant UED
                     </div>
                     <div
                         style={{

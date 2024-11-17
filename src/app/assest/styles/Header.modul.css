@@ -24,6 +24,17 @@
   align-items: center; */
 }
 
+@media (max-width: 1620px) {
+  .demo-logo {
+    width: 20%;
+    height: 75px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .ant-menu-light.ant-menu-horizontal>.ant-menu-item:hover::after,
 .ant-menu-light.ant-menu-horizontal>.ant-menu-submenu:hover::after,
 .ant-menu-light.ant-menu-horizontal>.ant-menu-item-active::after,
