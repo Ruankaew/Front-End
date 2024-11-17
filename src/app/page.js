@@ -92,7 +92,7 @@ export default function Home() {
                             left: 0,
                             right: 0,
                             bottom: 0,
-                            background: 'linear-gradient(145deg, yellow 0%, green 50%, yellow 130%)',
+                            // background: 'linear-gradient(145deg, yellow 0%, green 50%, yellow 130%)',
                             opacity: 0.6,
                             zIndex: 1,
                         }}
