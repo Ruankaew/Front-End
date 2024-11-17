@@ -203,7 +203,7 @@ export default function Header() {
                 src={Image_logo.src}
                 alt="Logo"
                 style={{
-                  width: "50%",
+                  width: "70%",
                   height: "100%",
                   objectFit: "cover",
                   borderRadius: "20px"
