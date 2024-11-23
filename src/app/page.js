@@ -21,7 +21,7 @@ export default function Home() {
     const { Content, Footer } = Layout;
     const [scrollPosition, setScrollPosition] = useState(0);
     const TextValuesLoop = 'JJ JIRA S LIBRARY';
-    const words = ['MA', 'IPO', 'DDD', 'WWW'];
+    const words = ['FINANCIAL IPO', 'M&A', 'FINANCIAL RESTRUCTURING', 'FINANCIAL CONSULTING'];
     const [currentWord, setCurrentWord] = useState(0);
 
 
@@ -130,16 +130,17 @@ export default function Home() {
                             fontWeight: 'bold',
                         }}
                     >
-                        <h1>YOUR TRUSTED PARTNER IN</h1>
-                        <div className="rotating-container">
-                            {/* ใช้ key สำหรับการ re-render */}
+                        <h1 className="text_titel">YOUR TRUSTED PARTNER IN</h1>
+                        <h1 className="text_slid">{words[currentWord]}</h1>
+                        
+                        {/* <div className="rotating-container">
                             <div
                                 className="rotating-word"
-                                key={currentWord} // เพิ่ม key เพื่อให้ React render ใหม่ทุกครั้ง
+                                // key={currentWord}
                             >
                                 {words[currentWord]}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div

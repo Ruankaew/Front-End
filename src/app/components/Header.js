@@ -5,9 +5,27 @@ import { Button, ConfigProvider, Layout, Menu, Drawer } from 'antd';
 import { ArrowRightOutlined, DownOutlined, MenuOutlined, RightOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/navigation';
 import styled from 'styled-components';
-import Image_logo from "../assest/image/Frame_482199.png"
+import Image_logo from "../assest/image/GroupLogo.png"
 
 const StyledMenu = styled(Menu)`
+  .ant-menu-item {
+    flex: 1;
+    text-align: center;
+    // min-width: 80px;
+  }
+
+  .ant-menu-submenu-title {
+    width: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ant-menu-title-content{
+    font-family: 'DM Sans';
+  }
+
   .ant-menu-item:hover::after {
     border-bottom-color: transparent !important;
   }
@@ -32,6 +50,7 @@ const StyledMenu = styled(Menu)`
     border-bottom-color: transparent !important;
   }
 `;
+
 
 export default function Header() {
   const router = useRouter();
@@ -99,11 +118,14 @@ export default function Header() {
         <>
           <Button
             style={{
-              backgroundColor: "#b07a31",
+              backgroundColor: "#CF982C",
+              width: "179px",
+              height: "50px",
               border: "none",
               outline: "none",
               color: "black",
               fontWeight: "500",
+              borderRadius: "50px",
             }}
             onMouseEnter={(e) => e.target.style.color = "black"}
             onMouseLeave={(e) => e.target.style.color = "black"}
@@ -184,7 +206,7 @@ export default function Header() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-around',
-              backgroundColor: isSticky ? 'rgb(187 185 185 / 90%)' : 'white',
+              backgroundColor: isSticky ? 'rgb(187 185 185 / 90%)' : '#F8F6F1',
               position: 'fixed',
               top: 0,
               left: 0,
@@ -192,7 +214,7 @@ export default function Header() {
               zIndex: 1000,
               boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
               // padding: !modeMobile ? '0 160px' : '0 20px',
-              padding: !modeMobile ? '0 0' : '0 20px',
+              padding: !modeMobile ? '0px 100px' : '0 20px',
               height: '90px',
               backdropFilter: isSticky ? 'blur(2px)' : 'none',
               transition: 'backdrop-filter 0.3s ease',
@@ -204,14 +226,18 @@ export default function Header() {
                 alt="Logo"
                 style={{
                   width: "70%",
-                  height: "100%",
+                  height: "auto",
                   objectFit: "cover",
-                  borderRadius: "20px"
+                  // borderRadius: "20px"
                 }}
               />
             </div>
 
 
+            <div></div>
+            <div></div>
+
+            
             <StyledMenu
               theme='light'
               mode="horizontal"
@@ -225,18 +251,19 @@ export default function Header() {
               items={items}
               style={{
                 flex: 1,
+                fontSize: "16px",
                 minWidth: 0,
-                maxWidth: "720px",
-                backgroundColor: 'transparent',
-                border: 'none',
-                display: modeMobile ? 'none' : 'flex',
-                fontWeight: "500",
-                justifyContent: "space-around"
+                maxWidth: "900px",
+                backgroundColor: "transparent",
+                border: "none",
+                display: modeMobile ? "none" : "flex",
+                fontWeight: 400,
+                justifyContent: "space-around",
+                padding: 0,
               }}
             />
 
-            <div></div>
-            <div></div>
+
             <div></div>
             <div></div>
             <div></div>

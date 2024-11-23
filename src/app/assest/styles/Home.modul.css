@@ -1,3 +1,11 @@
+
+@font-face {
+  font-family: 'Kudryashev Headline';
+  src: url('../../fonts/KudryashevHeadline-Sans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @keyframes spinText {
   from {
     transform: rotate(0deg);
@@ -15,6 +23,8 @@
 }
 
 .rotating-word {
+  font-family: 'Kudryashev Headline', sans-serif;
+  color: #CF982C;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -42,44 +52,19 @@
   animation: none;
 }
 
-
-
-/* .fixed-element {
-  left: 490px;
-  top: 550px;
-} */
-
-/* @media (max-width: 1056px) {
-  .fixed-element {
-    left: 360px;
-    top: 660px;
-  }
+.text_slid{
+  font-family: 'Kudryashev Headline', sans-serif;
+  color: #CF982C;
+  animation: slideUp 1s ease-out forwards; 
 }
 
-@media (max-width: 1000px) {
-  .fixed-element {
-    left: 260px;
-    top: 660px;
-  }
+@font-face {
+  font-family: 'Kudryashev Headline';
+  src: url('../../fonts/KudryashevHeadline-Sans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
-
-@media (max-width: 800px) {
-  .fixed-element {
-    left: 237px;
-    top: 660px;
-  }
+.text_titel {
+  font-family: 'Kudryashev Headline', sans-serif;
+  font-weight: 400;
 }
-
-@media (max-width: 560px) {
-  .fixed-element {
-    left: 165px;
-    top: 660px;
-  }
-}
-
-@media (max-width: 480px) {
-  .fixed-element {
-    left: 114px;
-    top: 660px;
-  }
-} */
