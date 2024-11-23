@@ -52,10 +52,34 @@
   animation: none;
 }
 
+@keyframes slideUpText {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  25% {
+    top: 0;
+    opacity: 1;
+  }
+  75% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -100%;
+    opacity: 0;
+  }
+}
+
 .text_slid{
+  font-size: "86.47px";
   font-family: 'Kudryashev Headline', sans-serif;
   color: #CF982C;
-  animation: slideUp 1s ease-out forwards; 
+  animation: slideUpText 1s ease-out forwards; 
+}
+
+.text_slid:not(:nth-child(1)) {
+  animation: none;
 }
 
 @font-face {
@@ -64,6 +88,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 .text_titel {
   font-family: 'Kudryashev Headline', sans-serif;
   font-weight: 400;

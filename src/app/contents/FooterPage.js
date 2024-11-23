@@ -2,12 +2,12 @@
 import { Layout } from 'antd';
 import React from 'react'
 
-export default function FooterPage({scrollPosition}) {
+export default function FooterPage({ scrollPosition }) {
     const { Footer } = Layout;
     return (
         <Footer
             style={{
-                backgroundColor: 'rgb(12 50 3)',
+                backgroundColor: '#0E341E',
                 color: 'white',
                 padding: '20px',
                 textAlign: 'center',
@@ -15,7 +15,7 @@ export default function FooterPage({scrollPosition}) {
                 zIndex: 2,
                 width: '100%',
                 boxSizing: 'border-box',
-                height: "100px",
+                height: "148px",
                 display: "flex",
                 alignItems: "center",
                 overflow: "hidden",
@@ -23,14 +23,16 @@ export default function FooterPage({scrollPosition}) {
         >
             <div
                 style={{
+                    fontFamily: "DM Sans",
                     marginRight: "10px",
                     width: "20%",
-                    height: "70px",
-                    backgroundColor: "white",
+                    // height: "70px",
                     flexShrink: 0,
                 }}
             >
-
+                <p>Trusted by</p>
+                <p>hundreds of</p>
+                <p>companies</p>
             </div>
 
             <div

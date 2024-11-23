@@ -1,7 +1,7 @@
 "use client";
 import './assest/styles/Home.modul.css';
 import React, { useEffect, useState } from 'react';
-import myImage from './assest/image/Frame_482199.png';
+import myImage from './assest/image/ImageLandingpage.png';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { Button, Flex, Layout } from 'antd';
@@ -9,6 +9,7 @@ import { ArrowRightOutlined } from '@ant-design/icons';
 import AboutPage from './Page/Trackrecords/page';
 import ContactPage from './Page/Contactus/page';
 import FooterPage from './contents/FooterPage';
+
 
 
 
@@ -34,10 +35,10 @@ export default function Home() {
 
 
     //----------------------------------Spinner-----------------------------------
-    let [leftValueSpiner, setLeftValueSpiner] = useState('calc(6% + 28.9%)');
+    let [leftValueSpiner, setLeftValueSpiner] = useState('calc(2% + 28.9%)');
     let [rightValueSpiner, setRightValueSpiner] = useState('');
     let [bottomValueSpiner, setBottomValueSpiner] = useState('');
-    let [topValueSpiner, setTopValueSpiner] = useState('calc(-210px + 50vh)');
+    let [topValueSpiner, setTopValueSpiner] = useState('calc(-150px + 50vh)');
 
     useEffect(() => {
         const handleResize = () => {
@@ -87,8 +88,7 @@ export default function Home() {
                 <div
                     id="home"
                     style={{
-                        background: `url(https://www.jaycapital.co.th/wp-content/uploads/2024/04/07.png?id=29618) !important`,
-                        backgroundSize: 'cover',
+                        // background: `url(https://www.jaycapital.co.th/wp-content/uploads/2024/04/07.png?id=29618) !important`,
                         backgroundPosition: 'center',
                         display: 'flex',
                         alignItems: 'center',
@@ -98,6 +98,27 @@ export default function Home() {
                         minHeight: '100vh'
                     }}
                 >
+                    <video
+                        style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            zIndex: -1,
+                        }}
+                        autoPlay
+                        muted
+                        loop
+                        preload="auto"
+                    >
+                        <source
+                            src="https://s3-figma-videos-production-sig.figma.com/video/TEAM/1303741208789463499/53dc876861d197a874a1b9b41335f0655a383695?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oCafdwOITxXjEUL57ft1JHNC1xQasAaOw0k3jh2dCjELRrqkve8EqYyGy9UPJtsnUiY3Z0LL40egCvNwV00RhQ~O5p7dPzMNIEhwgoq6AnM62yIEXjFW4LOv-CBrRj2mNuPd46XF9lurYlFEUW8Q4P7L4tPToN1njQ5tXeV8iVM7r8~6KOJ9UZ5RhRj-k8waRaKR2cyAZ2GGWug9bZdo~OBeNdFDCVRGx~YYfD9DIOtrROCgiSwWvgATNStHhhADXePhPyirSCUE5ORaC0GeXHoel333196kJ4UQJx1rTSzXTl3SNgogRFIvCn9D7KS~Eca9laoGDJPoHhacxkG1Kw__"
+                            type="video/mp4"
+                        />
+                    </video>
+
                     <div
                         style={{
                             position: 'absolute',
@@ -105,7 +126,7 @@ export default function Home() {
                             left: 0,
                             right: 0,
                             bottom: 0,
-                            background: 'linear-gradient(145deg, rgb(255, 215, 0) 0%, rgb(0, 77, 0) 30%, rgb(11, 78, 11) 60%, rgb(0, 102, 0) 80%, rgb(255, 215, 0) 100%)',
+                            background: 'linear-gradient(145deg, #CF982D -2%, rgb(0, 77, 0) 30%, rgb(11, 78, 11) 60%, rgb(0, 102, 0) 80%, #CF982C 100%)',
                             opacity: 0.6,
                             zIndex: 1,
                         }}
@@ -120,7 +141,7 @@ export default function Home() {
                             position: 'absolute',
                             right: 'calc(52% + 30px)',
                             top: 'calc(20% - 20px)',
-                            width: '38%%',
+                            width: '37%',
                             overflow: 'hidden',
                             borderRadius: '5%',
                             fontFamily: "fangsong",
@@ -132,14 +153,14 @@ export default function Home() {
                     >
                         <h1 className="text_titel">YOUR TRUSTED PARTNER IN</h1>
                         <h1 className="text_slid">{words[currentWord]}</h1>
-                        
-                        {/* <div className="rotating-container">
-                            <div
-                                className="rotating-word"
-                                // key={currentWord}
-                            >
-                                {words[currentWord]}
-                            </div>
+
+                        {/*<div className="rotating-container">
+                             <div
+                                 className="rotating-word"
+                                 // key={currentWord}
+                             >
+                                 {words[currentWord]}
+                             </div>
                         </div> */}
                     </div>
 
@@ -147,39 +168,59 @@ export default function Home() {
                         style={{
                             zIndex: 2,
                             position: 'absolute',
-                            right: 'calc(52% + 30px)',
+                            right: 'calc(34% + 30px)',
                             top: 'calc(45% - 20px)',
-                            width: "37%",
-                            height: "45%",
-                            border: '3px solid green',
+                            width: "55%",
+                            height: "50.6%",
                             overflow: "hidden",
-                            borderRadius: "5%",
+                            borderRadius: "14.16px",
                         }}
                     >
+                        {/* Background color */}
+                        <div
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                background: "linear-gradient(to right, rgba(2, 43, 13, 1) 50%, rgb(34 113 56 / 47%) 50%)",
+                                borderRadius: "14.16px",
+                                zIndex: 3,
+                                opacity: 0.5
+                            }}
+                        ></div>
+
                         <img
                             src={myImage.src}
                             alt="Logo"
                             style={{
-                                width: "auto",
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: "100%",
                                 height: "100%",
-                                objectFit: "cover"
+                                objectFit: "cover",
+                                zIndex: 2,
                             }}
                         />
                     </div>
 
+
                     <div
                         style={{
+                            fontFamily: "DM Sans",
                             fontSize: "clamp(8px, 2vw, 16px)",
                             zIndex: 2,
                             position: 'absolute',
                             right: rightValue,
-                            top: 'calc(50vh - 20px)',
-                            width: "auto",
+                            top: 'calc(75px + 50%)',
+                            width: "277px",
+                            fontWeight: 400,
                             transform: 'translateY(-50%)',
                         }}
                     >
-                        <h1>Welcome to Our Website!</h1>
-                        <p>Discover innovative products and solutions.</p>
+                        <p style={{ color: "#B9B8B0" }}>Jay Capital Advisory is dedicated to <span style={{ fontWeight: "bolder", color: "white" }}> delivering expert guidance </span> and customized solutions. With unwavering integrity, we help clients navigate complex financial landscapes and achieve sustainable growth.</p>
                     </div>
 
                     <div
@@ -256,6 +297,8 @@ export default function Home() {
 
                 <AboutPage />
                 <ContactPage />
+
+
             </Content>
         </>
     );
