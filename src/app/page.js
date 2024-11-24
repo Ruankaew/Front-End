@@ -9,13 +9,14 @@ import { ArrowRightOutlined } from '@ant-design/icons';
 import AboutPage from './Page/Trackrecords/page';
 import ContactPage from './Page/Contactus/page';
 import FooterPage from './contents/FooterPage';
-
+import Line from './components/Line';
 
 
 
 const LineStyle = styled("div")`
     height: 20px;
-    background: #855515;
+    background: rgba(207, 152, 44, 1);
+
 `;
 
 export default function Home() {
@@ -151,8 +152,7 @@ export default function Home() {
                             fontWeight: 'bold',
                         }}
                     >
-                        <h1 className="text_titel">YOUR TRUSTED PARTNER IN</h1>
-                        <h1 className="text_slid">{words[currentWord]}</h1>
+                        <h1 className="text_titel">YOUR TRUSTED PARTNER IN <br /> <span className="text_slid"> {words[currentWord]}</span></h1>
 
                         {/*<div className="rotating-container">
                              <div
@@ -296,6 +296,11 @@ export default function Home() {
                 <LineStyle />
 
                 <AboutPage />
+                
+                <Line />
+
+                
+
                 <ContactPage />
 
 

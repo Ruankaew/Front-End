@@ -1,6 +1,11 @@
 "use client";
 import { Layout } from 'antd';
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import Vector from '../assest/image/Vector.png'
+import Vector1 from '../assest/image/Vector (1).png'
+import Vector2 from '../assest/image/Vector (2).png'
+import Vector3 from '../assest/image/Vector (5).png'
+import Vector4 from '../assest/image/Vector (4).png'
 
 export default function FooterPage({ scrollPosition }) {
     const { Footer } = Layout;
@@ -24,15 +29,13 @@ export default function FooterPage({ scrollPosition }) {
             <div
                 style={{
                     fontFamily: "DM Sans",
+                    fontSize: "18px",
                     marginRight: "10px",
                     width: "20%",
-                    // height: "70px",
                     flexShrink: 0,
                 }}
             >
-                <p>Trusted by</p>
-                <p>hundreds of</p>
-                <p>companies</p>
+                <p>Trusted by <br /> hundreds of <br /> companies</p>
             </div>
 
             <div
@@ -50,7 +53,9 @@ export default function FooterPage({ scrollPosition }) {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "flex-start",
-                        transform: `translateX(-${scrollPosition * 1}px)`,
+                        // transform: `translateX(-${scrollPosition * 1}px)`,
+                        transform: `translateX(-${scrollPosition}px)`,
+                        transition: "transform 0.1s linear",
                     }}
                 >
                     <div
@@ -58,51 +63,72 @@ export default function FooterPage({ scrollPosition }) {
                             marginRight: "10px",
                             width: "100%",
                             height: "70px",
-                            backgroundColor: "rgba(255, 255, 255)",
-                            color: "black",
-                            whiteSpace: "nowrap"
+                            whiteSpace: "nowrap",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center"
                         }}
                     >
-                        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+                        <img src={Vector.src} alt="Vector" style={{ width: "121px" }} />
                     </div>
                     <div
                         style={{
                             marginRight: "10px",
                             width: "100%",
                             height: "70px",
-                            backgroundColor: "rgba(255, 255, 255)",
                             color: "black",
                             whiteSpace: "nowrap",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center"
                         }}
                     >
-                        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+                        <img src={Vector1.src} alt="Vector" style={{ width: "121px" }} />
                     </div>
                     <div
                         style={{
                             marginRight: "10px",
                             width: "100%",
                             height: "70px",
-                            backgroundColor: "rgba(255, 255, 255)",
                             color: "black",
                             whiteSpace: "nowrap",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center"
                         }}
                     >
-                        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+                        <img src={Vector2.src} alt="Vector" style={{ width: "121px" }} />
                     </div>
                     <div
                         style={{
                             marginRight: "10px",
                             width: "100%",
                             height: "70px",
-                            backgroundColor: "rgba(255, 255, 255)",
                             color: "black",
                             whiteSpace: "nowrap",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center"
                         }}
                     >
-                        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+                        <img src={Vector3.src} alt="Vector" style={{ width: "121px" }} />
+                    </div>
+                    <div
+                        style={{
+                            marginRight: "10px",
+                            width: "100%",
+                            height: "70px",
+                            color: "black",
+                            whiteSpace: "nowrap",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center"
+                        }}
+                    >
+                        <img src={Vector4.src} alt="Vector" style={{ width: "86px" , objectFit: "none" }} />
                     </div>
                 </div>
             </div>
-        </Footer>
+        </Footer >
     )
 }
