@@ -296,14 +296,14 @@ export default function Home() {
                 <LineStyle />
 
                 <AboutPage />
-                
+
                 <Line />
 
                 
 
                 <ContactPage />
 
-
+                <LineStyle />
             </Content>
         </>
     );
