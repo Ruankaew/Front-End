@@ -2,7 +2,14 @@ import React from 'react'
 
 export default function Line() {
     return (
-        <div style={{padding: "0 73px"}}>
+        <div 
+            style={{
+                // padding: "0 73px"
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+            }}
+        >
             <svg width="1372" height="68" viewBox="0 0 1372 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="33.4998" x2="652" y2="33.4998" stroke="#B5BEB8" />
                 <line x1="720" y1="33.4998" x2="1372" y2="33.4998" stroke="#B5BEB8" />
