@@ -6,8 +6,7 @@ import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { Button, Flex, Layout } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import AboutPage from './Page/Trackrecords/page';
-import ContactPage from './Page/Contactus/page';
+import AboutPage from './contents/About';
 import FooterPage from './contents/FooterPage';
 import Line from './components/Line';
 

@@ -54,7 +54,7 @@ export default function ContactPage() {
                 style={{
                     height: "384px",
                     borderRadius: "20px",
-                    backgroundColor: "red"
+                    backgroundColor: "#001529"
                 }}
             >
 
