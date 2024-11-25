@@ -9,14 +9,8 @@ import { ArrowRightOutlined } from '@ant-design/icons';
 import AboutPage from './contents/About';
 import FooterPage from './contents/FooterPage';
 import Line from './components/Line';
+import LineSeparator from './contents/LineSeparator';
 
-
-
-const LineStyle = styled("div")`
-    height: 20px;
-    background: rgba(207, 152, 44, 1);
-
-`;
 
 export default function Home() {
     const { Content, Footer } = Layout;
@@ -292,14 +286,13 @@ export default function Home() {
                 </div>
                 <FooterPage scrollPosition={scrollPosition} />
 
-                <LineStyle />
+                <LineSeparator />
 
                 <AboutPage />
 
                 <Line />
 
-
-                <LineStyle />
+        
             </Content>
         </>
     );
