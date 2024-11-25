@@ -298,7 +298,6 @@ export default function Home() {
 
                 <Line />
 
-                {/* <ContactPage /> */}
 
                 <LineStyle />
             </Content>
