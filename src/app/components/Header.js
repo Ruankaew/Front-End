@@ -142,7 +142,6 @@ export default function Header() {
 
   const onClick = (e) => {
     const clickedItem = items.find(item => item.key === e.key);
-    setCurrent(e.key);
     // const element = document.getElementById(e.key);
     // if (element) {
     //   window.scrollTo({
@@ -152,6 +151,7 @@ export default function Header() {
     // };
     if (clickedItem?.path) {
       router.push(clickedItem.path);
+      sessionStorage.setItem('active_nav', e.key)
     }
     setCurrent(e.key);
   };
@@ -161,9 +161,6 @@ export default function Header() {
   };
 
   useEffect(() => {
-    // const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    // setTheme(userPrefersDark ? 'dark' : 'light');
-
     if (typeof window !== 'undefined') {
       if (navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)
@@ -181,6 +178,8 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
+    let getNav = sessionStorage.getItem("active_nav");
+    setCurrent(getNav)
     const handleScroll = () => {
       setIsSticky(window.scrollY > 0);
     };

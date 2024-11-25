@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from "react";
 import { Input, Col, Row, Form, Button } from "antd";
+import Image from '../../assest/image/GroupLogo.png';
 
 export default function ContactPage() {
     const mapRef = useRef(null);
@@ -72,6 +73,7 @@ export default function ContactPage() {
                 ></div>
             </div>
 
+
             <div style={{ textAlign: "center", padding: "20px" }}>
                 <h1 style={{ fontFamily: "DM Sans", fontWeight: 300 }}>Let’s Build Your Financial Future <br />Together</h1>
             </div>
@@ -82,27 +84,27 @@ export default function ContactPage() {
                     <Row gutter={16}>
                         <Col span={12}>
                             <Form.Item name="firstName">
-                                <Input size="large" placeholder="First Name" allowClear style={{fontFamily: "DM Sans" , border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px",}}/>
+                                <Input size="large" placeholder="First Name" allowClear style={{ fontFamily: "DM Sans", border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px", }} />
                             </Form.Item>
                         </Col>
                         <Col span={12}>
                             <Form.Item name="lastName">
-                                <Input size="large" placeholder="Last Name" allowClear style={{fontFamily: "DM Sans" , border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px",}}/>
+                                <Input size="large" placeholder="Last Name" allowClear style={{ fontFamily: "DM Sans", border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px", }} />
                             </Form.Item>
                         </Col>
                         <Col span={24}>
                             <Form.Item name="email">
-                                <Input size="large" placeholder="Email" allowClear style={{fontFamily: "DM Sans" , border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px",}}/>
+                                <Input size="large" placeholder="Email" allowClear style={{ fontFamily: "DM Sans", border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px", }} />
                             </Form.Item>
                         </Col>
                         <Col span={24}>
                             <Form.Item name="message">
-                                <Input.TextArea size="large" placeholder="Message" allowClear style={{fontFamily: "DM Sans", resize: "none" , height:"194px" , border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px",}}/>
+                                <Input.TextArea size="large" placeholder="Message" allowClear style={{ fontFamily: "DM Sans", resize: "none", height: "194px", border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px", }} />
                             </Form.Item>
                         </Col>
                         <Col span={24}>
                             <Form.Item label={null}>
-                                <Button type="primary" htmlType="submit" style={{width:"100%" , background:"rgba(207, 152, 44, 1)" , fontFamily: "DM Sans"}} size="large">
+                                <Button type="primary" htmlType="submit" style={{ width: "100%", background: "rgba(207, 152, 44, 1)", fontFamily: "DM Sans", color: "black" }} size="large">
                                     Send
                                 </Button>
                             </Form.Item>
