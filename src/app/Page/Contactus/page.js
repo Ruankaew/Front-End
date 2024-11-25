@@ -59,7 +59,8 @@ export default function ContactPage() {
                 style={{
                     height: "384px",
                     borderRadius: "20px",
-                    backgroundColor: "#001529"
+                    background: "linear-gradient(28deg, rgba(174,189,166,1) 0%, rgba(80,112,83,1) 37%, rgba(43,77,48,1) 63%, rgba(31,61,36,1) 84%)",
+
                 }}
             >
 
