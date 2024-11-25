@@ -292,7 +292,8 @@ export default function Home() {
 
                 <Line />
 
-        
+            
+           
             </Content>
         </>
     );

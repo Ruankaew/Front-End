@@ -113,7 +113,7 @@ export default function Footer() {
 
     return (
         <>
-            <LineSeparator/>
+            <LineSeparator />
             <Footer
                 style={{
                     textAlign: "center",
