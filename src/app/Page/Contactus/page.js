@@ -57,13 +57,14 @@ export default function ContactPage() {
             <div
                 style={{
                     height: "384px",
+                    borderRadius: "20px",
                     backgroundColor: "red"
                 }}
             >
 
             </div>
 
-            <div style={{ textAlign: "center"}}>
+            <div style={{ textAlign: "center",marginTop: "20px"}}>
 
                 <div
                     ref={mapRef}
