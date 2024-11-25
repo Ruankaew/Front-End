@@ -12,10 +12,6 @@ export default function ContactPage() {
                 center: location,
                 disableDefaultUI: true,
                 styles: [
-                    // {
-                    //     elementType: "geometry",
-                    //     stylers: [{ color: "#E0E0E0" }], // พื้นหลังแผนที่เป็นสีเทา
-                    // },
                     {
                         featureType: "poi",
                         stylers: [{ visibility: "off" }], // ซ่อนจุดสนใจ เช่น ธุรกิจ ร้านอาหาร
@@ -50,7 +46,7 @@ export default function ContactPage() {
             id="contactus"
             style={{
                 backgroundColor: "#fff0f6",
-                marginTop: "20px",
+                marginTop: "105px",
                 padding: "0 50px"
             }}
         >

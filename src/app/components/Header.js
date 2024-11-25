@@ -4,6 +4,7 @@ import "../assest/styles/Header.modul.css";
 import { Button, ConfigProvider, Layout, Menu, Drawer } from 'antd';
 import { ArrowRightOutlined, DownOutlined, MenuOutlined, RightOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/navigation';
+
 import styled from 'styled-components';
 import Image_logo from "../assest/image/GroupLogo.png"
 
@@ -142,15 +143,17 @@ export default function Header() {
   const onClick = (e) => {
     const clickedItem = items.find(item => item.key === e.key);
     setCurrent(e.key);
-    const element = document.getElementById(e.key);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 100,
-        behavior: 'smooth',
-      });
-    };
-
-    // window.history.pushState(null, '', `${clickedItem.path}`);
+    // const element = document.getElementById(e.key);
+    // if (element) {
+    //   window.scrollTo({
+    //     top: element.offsetTop - 100,
+    //     behavior: 'smooth',
+    //   });
+    // };
+    if (clickedItem?.path) {
+      router.push(clickedItem.path);
+    }
+    setCurrent(e.key);
   };
 
   const onOpenChange = (keys) => {
@@ -247,7 +250,6 @@ export default function Header() {
               onOpenChange={onOpenChange}
               className="custom-menu"
               selectedKeys={[current]}
-              // selectedKeys={[]}
               items={items}
               style={{
                 flex: 1,
