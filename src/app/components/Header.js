@@ -17,10 +17,10 @@ const StyledMenu = styled(Menu)`
 
   .ant-menu-submenu-title {
     width: 150px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // text-align: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
   }
 
   .ant-menu-title-content{

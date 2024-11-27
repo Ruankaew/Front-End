@@ -7,7 +7,8 @@ export default function AboutPage() {
         <div class="container">
             <div
                 style={{
-                    padding: "80px 123px"
+                    padding: "80px 162px",
+                    width: "80%"
                 }}
             >
                 <div
@@ -47,6 +48,7 @@ export default function AboutPage() {
                         class="group_right"
                         style={{
                             width: "60%",
+                            textAlign: "end",
                         }}
                     >
                         <div class="text">

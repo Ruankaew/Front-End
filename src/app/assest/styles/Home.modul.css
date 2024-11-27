@@ -52,29 +52,31 @@
   animation: none;
 }
 
+
+
+
+
+
+
 @keyframes slideUpText {
   0% {
     top: 100%;
     opacity: 0;
   }
-  25% {
-    top: 0;
-    opacity: 1;
-  }
-  75% {
-    top: 0;
+  50% {
+    top: 50%;
     opacity: 1;
   }
   100% {
-    top: -100%;
-    opacity: 0;
+    top: 0%;
+    opacity: 1;
   }
 }
 
 .text_slid{
-  font-size: "86.47px";
   font-family: 'Kudryashev Headline', sans-serif;
   color: #CF982C;
+  transform: translateX(-50%);
   animation: slideUpText 1s ease-out forwards; 
 }
 
