@@ -23,7 +23,7 @@ export default function AboutPage() {
                     <div
                         className='group_left'
                         style={{
-                            width: "50%",
+                            width: "30%",
                         }}
                     >
                         <button
@@ -48,11 +48,12 @@ export default function AboutPage() {
                         class="group_right"
                         style={{
                             width: "60%",
-                            textAlign: "end",
+                            textAlign: "start",
+                            // padding: "0 45px"
                         }}
                     >
                         <div class="text">
-                            <p>Jay Capital Advisory Limited <br /> is a <spzn style={{ fontFamily: "DM Sans", fontWeight: 600, color: "rgba(181, 190, 184, 1)" }}>SEC-approved </spzn> boutique <br /> financial advisory firm based <br />in Bangkok, Thailand. </p>
+                            <p style={{fontSize: "48px"}}>Jay Capital Advisory Limited <br /> is a <spzn style={{ fontFamily: "DM Sans", fontWeight: 600, color: "rgba(181, 190, 184, 1)" }}>SEC-approved </spzn> boutique <br /> financial advisory firm based <br />in Bangkok, Thailand. </p>
                             <div
                                 style={{
                                     border: "none",
