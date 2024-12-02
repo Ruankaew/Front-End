@@ -13,10 +13,10 @@
 }
 
 .text{
-    width: 90%;
+    /* width: 90%; */
     p {
         font-family: DM Sans;
-        font-size: 40px;
+        font-size: 53px;
     }
     
     div {

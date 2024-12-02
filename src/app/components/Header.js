@@ -11,8 +11,8 @@ import Image_logo from "../assest/image/GroupLogo.png"
 const StyledMenu = styled(Menu)`
   .ant-menu-item {
     flex: 1;
-    text-align: center;
-    // min-width: 80px;
+    text-align: left;
+    min-width: 50px;
   }
 
   .ant-menu-submenu-title {
@@ -265,9 +265,9 @@ export default function Header() {
             />
 
 
+            {/* <div></div>
             <div></div>
-            <div></div>
-            <div></div>
+            <div></div> */}
 
             {modeMobile && (
               <>

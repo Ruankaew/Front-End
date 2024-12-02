@@ -8,7 +8,6 @@ export default function AboutPage() {
             <div
                 style={{
                     padding: "80px 162px",
-                    // width: "80%"
                 }}
             >
                 <div
@@ -47,18 +46,12 @@ export default function AboutPage() {
                     <div
                         class="group_right"
                         style={{
-                            width: "60%",
                             textAlign: "start",
-                            // padding: "0 45px"
                         }}
                     >
                         <div class="text">
-                            <p style={{ fontSize: "48px" }}>Jay Capital Advisory Limited <br /> is a <spzn style={{ fontFamily: "DM Sans", fontWeight: 600, color: "rgba(181, 190, 184, 1)" }}>SEC-approved </spzn> boutique <br /> financial advisory firm based <br />in Bangkok, Thailand. </p>
-                            <div
-                                style={{
-                                    width: "77%"
-                                }}
-                            >
+                            <p style={{ fontSize: "50px" }}>Jay Capital Advisory Limited <br /> is a <spzn style={{ fontFamily: "DM Sans", fontWeight: 600, color: "rgba(181, 190, 184, 1)" }}>SEC-approved </spzn> boutique <br /> financial advisory firm based <br />in Bangkok, Thailand. </p>
+                            <div>
                                 <div
                                     style={{
                                         border: "none",

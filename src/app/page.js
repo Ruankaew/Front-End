@@ -3,14 +3,12 @@ import './assest/styles/Home.modul.css';
 import React, { useEffect, useState } from 'react';
 import myImage from './assest/image/ImageLandingpage.png';
 import myImage2 from './assest/image/Property.png';
-import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { Button, Flex, Layout } from 'antd';
-import { ArrowRightOutlined } from '@ant-design/icons';
 import AboutPage from './contents/About';
 import FooterPage from './contents/FooterPage';
-import Line from './components/Line';
-
+import ImageGroup from './assest/image/Group482133.png'
+import ImageCoin from './assest/image/coin-wooden-table.png'
 
 const LineStyle = styled("div")`
     height: 13px;
@@ -236,76 +234,6 @@ export default function Home() {
                 >
                     <img src={myImage2.src} alt='photo' style={{ width: "96.57px", height: "96.81px" }} />
                 </div>
-
-                {/* <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            position: "relative",
-                            left: leftValueSpiner,
-                            top: topValueSpiner
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: '60px',
-                                height: '60px',
-                                position: "absolute",
-                                borderRadius: '50%',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                zIndex: 2,
-                                transformOrigin: 'center center',
-                            }}
-                        >
-                            <div
-                                style={{
-                                    position: 'absolute',
-                                    width: '100%',
-                                    height: '100%',
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    // animation: 'spinText 10s linear infinite',
-                                    // transformOrigin: 'center center',
-                                }}
-                            > */}
-                {/* {TextValuesLoop.split('').map((char, index) => (
-                                    <span
-                                        key={index}
-                                        style={{
-                                            position: 'absolute',
-                                            transform: `rotate(${(index * 360) / TextValuesLoop.length}deg) translateY(-30px)`,
-                                            transformOrigin: 'center center',
-                                            fontSize: '8px',
-                                            fontWeight: 'bold',
-                                            color: 'yellow',
-                                        }}
-                                    >
-                                        {char}
-                                    </span>
-                                ))} */}
-
-                {/* <img src={myImage2.src} alt='photo' style={{ width: "160%" }} /> */}
-
-                {/* </div>
-                        </div> */}
-
-                {/* <span
-                            style={{
-                                position: 'absolute',
-                                fontSize: '12px',
-                                fontWeight: 'bold',
-                                color: 'yellow',
-                                zIndex: 3,
-                            }}
-                        >
-                            <ArrowRightOutlined style={{ fontSize: '17px', fontWeight: "bolder", transform: 'scaleX(1.5)', cursor: "pointer" }} />
-                        </span> */}
-                {/* </div> */}
-
             </div>
             <FooterPage scrollPosition={scrollPosition} />
 
@@ -314,17 +242,116 @@ export default function Home() {
             <AboutPage />
 
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <div class="divider">
-                    <div class="divider-line"></div>
-                    <div class="divider-icon">
+                <div className="divider">
+                    <div className="divider-line"></div>
+                    <div className="divider-icon">
                         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.9417 18.1573C22.6077 24.6609 28.3456 30.3268 34.9122 34.9117C30.3273 28.3451 24.6705 22.5982 18.1579 17.9412C24.6615 13.2752 30.3273 7.53723 34.9123 0.9706C28.3456 5.55553 22.5987 11.2124 17.9417 17.725C13.2757 11.2214 7.53776 5.55553 0.971124 0.970601C5.55606 7.53723 11.2129 13.2842 17.7255 17.9412C11.2219 22.6072 5.55606 28.3451 0.971125 34.9117C7.53776 30.3268 13.2847 24.6699 17.9417 18.1573Z" fill="#CF982C" />
                         </svg>
 
                     </div>
-                    <div class="divider-line"></div>
+                    <div className="divider-line"></div>
                 </div>
             </div>
+
+            <div
+                style={{
+                    background: "none",
+                    marginBottom: "20px",
+                    padding: "0 50px"
+                }}
+            >
+                <div
+                    style={{
+                        height: "440px",
+                        borderRadius: "20px",
+                        background: "linear-gradient(28deg, rgba(174,189,166,1) 0%, rgba(80,112,83,1) 37%, rgba(43,77,48,1) 63%, rgba(31,61,36,1) 84%)",
+
+                    }}
+                >
+                    <div style={{ display: "flex" }}>
+                        <div className="content_left">
+                            <h2 style={{ color: "rgba(248, 246, 241, 1)", fontFamily: "DM Sans" }}>Execution excellence with utmost integrity to drive business and society sustainably</h2>
+                            <p style={{ maxWidth: "450px" }}>
+                                <span style={{ color: "rgba(248, 246, 241, 1)", fontFamily: "DM Sans" }}>Strategic and financial consulting group</span><br />
+                                <span style={{ color: "rgba(181, 190, 184, 1)", fontFamily: "DM Sans" }}>Jay Capital Advisory Limited is an SEC-approved financial advisory firm
+                                    based in Bangkok, Thailand. We have been providing financial consulting
+                                    services to our clients for more than 20 years.</span>
+                            </p>
+                        </div>
+
+
+                        <div className="content_right">
+                            <img style={{ width: "561px", height: "200px", margin: "30px" }} src={ImageGroup.src} />
+                        </div>
+                    </div>
+
+                    <div className="services">
+                        <div className="service">Financial Advisory (FA)</div>
+                        <div className="service">Strategic Solutions</div>
+                        <div className="service">Business Reorientation</div>
+                        <div className="service">Knowledge Sharing</div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <br/>
+            <br/>
+
+            <div
+                style={{
+                    background: "none",
+                    marginBottom: "20px",
+                    padding: "0 50px"
+                }}
+            >
+                <div
+                    style={{
+                        height: "707px",
+                        borderRadius: "20px",
+                        background: "linear-gradient(28deg, rgba(174,189,166,1) 0%, rgba(80,112,83,1) 37%, rgba(43,77,48,1) 63%, rgba(31,61,36,1) 84%)",
+                        position: "relative",
+                        zIndex: 1,
+                        overflow: "hidden"
+                    }}
+                >
+                    <div class="content_financial">
+                        <div class="title">
+                            <h1>Financial<br />Advisory</h1>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Our Financial Solutions cover essential services, including Mergers &amp; Acquisitions (M&amp;A), Share Valuation &amp; Feasibility Studies, and Independent Financial Advisory (IFA). We guide clients through Initial Public Offerings (IPOs) and Private Placements (PP), and provide Financial Restructuring strategies.
+                            </p>
+                        </div>
+                        <div class="services_financial">
+                            <div class="service-item">
+                                <span>Initial Public Offerings (IPOs)</span>
+                            </div>
+                            <div class="service-item">
+                                <span>Mergers & Acquisitions</span>
+                            </div>
+                            <div class="service-item">
+                                <span>Independent Financial Advisory</span>
+                            </div>
+                            <div class="service-item">
+                                <span>Initial Public Offerings & Private Placements</span>
+                            </div>
+                            <div class="service-item">
+                                <span>Financial Restructuring</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="background">
+                        <img src={ImageCoin.src} alt="Coins" />
+                        <div class="gradient-overlay"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
 
 
             <LineStyle />
