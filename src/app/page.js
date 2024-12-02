@@ -295,9 +295,9 @@ export default function Home() {
 
                 </div>
             </div>
-            
-            <br/>
-            <br/>
+
+            <br />
+            <br />
 
             <div
                 style={{
@@ -317,13 +317,15 @@ export default function Home() {
                     }}
                 >
                     <div class="content_financial">
-                        <div class="title">
-                            <h1>Financial<br />Advisory</h1>
-                        </div>
-                        <div class="description">
-                            <p>
-                                Our Financial Solutions cover essential services, including Mergers &amp; Acquisitions (M&amp;A), Share Valuation &amp; Feasibility Studies, and Independent Financial Advisory (IFA). We guide clients through Initial Public Offerings (IPOs) and Private Placements (PP), and provide Financial Restructuring strategies.
-                            </p>
+                        <div style={{display: "flex" ,justifyContent: "space-between"}}>
+                            <div class="title">
+                                <p>Financial<br />Advisory</p>
+                            </div>
+                            <div class="description">
+                                <p>
+                                    Our Financial Solutions cover essential services, including Mergers &amp; Acquisitions (M&amp;A), Share Valuation &amp; Feasibility Studies, and Independent Financial Advisory (IFA). We guide clients through Initial Public Offerings (IPOs) and Private Placements (PP), and provide Financial Restructuring strategies.
+                                </p>
+                            </div>
                         </div>
                         <div class="services_financial">
                             <div class="service-item">
