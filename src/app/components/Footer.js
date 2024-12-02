@@ -57,6 +57,7 @@ const LineStyle = styled("div")`
     background-color: rgba(207, 152, 44, 1);
 `;
 
+
 export default function Footer() {
     const { Header, Footer } = Layout;
 
@@ -116,7 +117,7 @@ export default function Footer() {
 
     return (
         <>
-            <LineStyle />
+            {/* <LineStyle /> */}
             <Footer
                 style={{
                     textAlign: "center",

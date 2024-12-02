@@ -101,11 +101,11 @@ export default function Home() {
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',
-                        zIndex: -1,
+                        zIndex: 1,
                         background: "white",
-                        opacity: 0.7,
+                        opacity: 1,
                         pointerEvents: "none",
-                        filter: 'brightness(200%) grayscale(100%)',
+                        // filter: 'brightness(200%) grayscale(100%)',
                     }}
                     autoPlay
                     muted
@@ -113,7 +113,7 @@ export default function Home() {
                     preload="auto"
                 >
                     <source
-                        src="https://s3-figma-videos-production-sig.figma.com/video/TEAM/1303741208789463499/53dc876861d197a874a1b9b41335f0655a383695?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oCafdwOITxXjEUL57ft1JHNC1xQasAaOw0k3jh2dCjELRrqkve8EqYyGy9UPJtsnUiY3Z0LL40egCvNwV00RhQ~O5p7dPzMNIEhwgoq6AnM62yIEXjFW4LOv-CBrRj2mNuPd46XF9lurYlFEUW8Q4P7L4tPToN1njQ5tXeV8iVM7r8~6KOJ9UZ5RhRj-k8waRaKR2cyAZ2GGWug9bZdo~OBeNdFDCVRGx~YYfD9DIOtrROCgiSwWvgATNStHhhADXePhPyirSCUE5ORaC0GeXHoel333196kJ4UQJx1rTSzXTl3SNgogRFIvCn9D7KS~Eca9laoGDJPoHhacxkG1Kw__"
+                        src="https://s3-figma-videos-production-sig.figma.com/video/TEAM/1303741208789463499/53dc876861d197a874a1b9b41335f0655a383695?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MUmEseMWDxa65CnjfvbCdoUUcTLF8fWkON2Fu5pw-s3Id-IpCacoABay88msp8f8rSw1MOK4rx0SWfwGmGYBmnFuWg~Sl2N0WWB-KFZB4m7mildxjL9Lx6HviCixCxpko4kMG7P1lftGjhbzHD7pOTp9o4gB06zN05A~xqCSQektDRmWgWlafuRoh2ZraW08NMD7XbS03qVxfnVOKtUOtcsFIijScJh2nZEXt-7v~mG6EWADmgr789PwvFNFeJSBrhfnlGD1bhGYi0l9PL47b8jGNGPRpgBvInTfOmSKkPUm0Eyokn588fCDgUkULCmnbzjXiZSnDf4bJPDEmd9nYg__"
                         type="video/mp4"
                     />
                 </video>
@@ -313,17 +313,21 @@ export default function Home() {
 
             <AboutPage />
 
-            <div class="divider">
-                <div class="divider-line"></div>
-                <div class="divider-icon">
-                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.9417 18.1573C22.6077 24.6609 28.3456 30.3268 34.9122 34.9117C30.3273 28.3451 24.6705 22.5982 18.1579 17.9412C24.6615 13.2752 30.3273 7.53723 34.9123 0.9706C28.3456 5.55553 22.5987 11.2124 17.9417 17.725C13.2757 11.2214 7.53776 5.55553 0.971124 0.970601C5.55606 7.53723 11.2129 13.2842 17.7255 17.9412C11.2219 22.6072 5.55606 28.3451 0.971125 34.9117C7.53776 30.3268 13.2847 24.6699 17.9417 18.1573Z" fill="#CF982C" />
-                    </svg>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <div class="divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-icon">
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9417 18.1573C22.6077 24.6609 28.3456 30.3268 34.9122 34.9117C30.3273 28.3451 24.6705 22.5982 18.1579 17.9412C24.6615 13.2752 30.3273 7.53723 34.9123 0.9706C28.3456 5.55553 22.5987 11.2124 17.9417 17.725C13.2757 11.2214 7.53776 5.55553 0.971124 0.970601C5.55606 7.53723 11.2129 13.2842 17.7255 17.9412C11.2219 22.6072 5.55606 28.3451 0.971125 34.9117C7.53776 30.3268 13.2847 24.6699 17.9417 18.1573Z" fill="#CF982C" />
+                        </svg>
 
+                    </div>
+                    <div class="divider-line"></div>
                 </div>
-                <div class="divider-line"></div>
             </div>
 
+
+            <LineStyle />
         </>
     );
 }

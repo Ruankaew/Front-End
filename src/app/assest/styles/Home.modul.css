@@ -103,6 +103,7 @@
 .divider {
   display: flex;
   align-items: center;
+  width: 95%;
   gap: 15px;
   padding-bottom: 6%;
 }
@@ -119,7 +120,7 @@
   align-items: center;
 }
 
-svg {
+.divider-icon svg {
   width: 20px;
   height: 20px;
 }
