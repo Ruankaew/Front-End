@@ -8,7 +8,7 @@ export default function AboutPage() {
             <div
                 style={{
                     padding: "80px 162px",
-                    width: "80%"
+                    // width: "80%"
                 }}
             >
                 <div

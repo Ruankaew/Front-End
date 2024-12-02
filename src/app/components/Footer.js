@@ -5,8 +5,6 @@ import styled from 'styled-components';
 import { RightOutlined } from '@ant-design/icons';
 import Image_logo from "../assest/image/GroupLogo.png"
 import "../assest/styles/Footer.css"
-import LineSeparator from '../contents/LineSeparator';
-
 
 const StyledMenu = styled(Menu)`
   .ant-menu-item {
@@ -52,6 +50,11 @@ const StyledMenu = styled(Menu)`
   .ant-menu-submenu .ant-menu-item:hover::after {
     border-bottom-color: transparent !important;
   }
+`;
+
+const LineStyle = styled("div")`
+    height: 13px;
+    background-color: rgba(207, 152, 44, 1);
 `;
 
 export default function Footer() {
@@ -113,7 +116,7 @@ export default function Footer() {
 
     return (
         <>
-            <LineSeparator />
+            <LineStyle />
             <Footer
                 style={{
                     textAlign: "center",
@@ -164,13 +167,7 @@ export default function Footer() {
                         </svg>
                     </div>
 
-                    {/* <div></div>
-                <div></div>
-                <div></div>
-                <div></div> 
-                <div></div>*/}
-
-
+                    
                     <StyledMenu
                         theme='light'
                         mode="horizontal"
