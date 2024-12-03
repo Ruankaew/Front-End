@@ -1,5 +1,4 @@
-.container {
-    /* width: 100%; */
+/* .container {
     height: 570px;
 }
 
@@ -13,7 +12,6 @@
 }
 
 .text{
-    /* width: 90%; */
     p {
         font-family: DM Sans;
         font-size: 53px;
@@ -26,4 +24,72 @@
             height: 82.98px;
         }
     }
+} */
+
+.container {
+    height: 570px;
+}
+
+.container_header {
+    padding: 80px 162px;
+}
+
+.group_left_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: auto;
+    background: white;
+}
+
+.group_left {
+    width: 30%;
+}
+
+.group_left button {
+    width: 124px;
+    height: 44px;
+    border: 1px dotted rgba(207, 152, 44, 1);
+    border-radius: 42px;
+    font-family: DM Sans;
+    background-color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.group_left p {
+    color: black !important;
+    font-family: DM Sans;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.group_right {
+    text-align: start;
+}
+
+.text p {
+    font-family: DM Sans;
+    font-size: 50px;
+}
+
+.text p span{
+    font-family: DM Sans;
+    font-weight: 600; 
+    color: rgba(181, 190, 184, 1);
+}
+
+.text div {
+    border: none;
+    background: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    /* width: 347px; */
+}
+
+.text div svg {
+    cursor: pointer;
+    width: 82.98px;
+    height: 82.98px;
 }

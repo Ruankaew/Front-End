@@ -1,0 +1,65 @@
+#contactus {
+    background-color: #fff0f6;
+    margin-top: 105px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+#contactus .image-container {
+    height: 384px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#contactus .image-container img {
+    width: 100%;
+    height: 384px;
+    object-fit: cover;
+}
+
+#contactus .map-container {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contactus .map-container #map {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+}
+
+#contactus .title {
+    text-align: center;
+    padding: 20px;
+}
+
+#contactus .title h1 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+
+#contactus .form-container {
+    width: 80%;
+    height: 400px;
+    margin: 0 140px 80px 140px;
+}
+
+#contactus .form-container .ant-form-item input,
+#contactus .form-container .ant-form-item textarea {
+    font-family: "DM Sans", sans-serif;
+    border-radius: 4px;
+}
+
+#contactus .form-container .ant-form-item textarea {
+    resize: none;
+    height: 194px;
+}
+
+#contactus .form-container .ant-btn-primary {
+    width: 100%;
+    background: rgba(207, 152, 44, 1);
+    font-family: "DM Sans", sans-serif;
+    color: black;
+}

@@ -5,16 +5,6 @@
   font-style: normal;
 }
 
-@keyframes spinText {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes slideUp {
   0% {
     top: 100%;
@@ -56,7 +46,6 @@
   margin-top: -10px;
 }
 
-
 .divider {
   display: flex;
   align-items: center;
@@ -83,8 +72,6 @@
   height: 20px;
 }
 
-
-
 .content_left {
   text-align: left;
   max-width: 510px;
@@ -107,9 +94,7 @@
 
 .content_right {
   text-align: left;
-  /* max-width: 510px; */
   margin-bottom: 20px;
-  /* padding-left: 105px; */
   padding-top: 50px;
 }
 
@@ -194,7 +179,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1500px;
+  min-width: 1200px;
 }
 
 .title p {
@@ -221,15 +208,49 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  height: 44px;
+}
+
+.services_financial .services_financial_up{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.services_financial .services_financial_down{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
 }
 
 .service-item {
+  background: rgba(255, 255, 255, 0.2);
+  height: 25px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-weight: 400;
+  font-family: DM Sans;
+}
+
+.service-item_1 {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 10px 20px;
   font-size: 0.9rem;
   color: white;
   text-align: center;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
+  font-weight: 400;
+  font-family: DM Sans;
+  height: 25px;
+  margin-top: 35px; 
 }

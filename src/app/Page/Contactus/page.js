@@ -2,7 +2,7 @@
 import "../../assest/styles/Cantact.modul.css"
 import React, { useEffect, useRef } from "react";
 import { Input, Col, Row, Form, Button } from "antd";
-import Image from '../../assest/image/GroupLogo.png';
+import Image from '../../assest/image/Heros V4.png';
 
 export default function ContactPage() {
     const mapRef = useRef(null);
@@ -48,77 +48,51 @@ export default function ContactPage() {
     }, []);
 
     return (
-        <div
-            id="contactus"
-            style={{
-                backgroundColor: "#fff0f6",
-                marginTop: "105px",
-                marginBottom: "20px",
-                padding: "0 50px"
-            }}
-        >
-            <div
-                style={{
-                    height: "384px",
-                    borderRadius: "20px",
-                    background: "linear-gradient(28deg, rgba(174,189,166,1) 0%, rgba(80,112,83,1) 37%, rgba(43,77,48,1) 63%, rgba(31,61,36,1) 84%)",
-
-                }}
-            >
-
+        <div id="contactus">
+            <div className="image-container">
+                <img src={Image.src} alt="Image" />
             </div>
 
-            <div style={{ position: "relative", textAlign: "center", marginTop: "20px" }}>
-
-                <div
-                    ref={mapRef}
-                    style={{ width: "100%", height: "450px", borderRadius: "10px", backgroundColor: "#E0E0E0" }}
-                />
-
+            <div className="map-container">
+                <div ref={mapRef} id="map" />
             </div>
 
+            <div className="title">
+                <h1>Let’s Build Your Financial Future <br />Together</h1>
+            </div>
 
-
-            <div>
-                <div style={{ textAlign: "center", padding: "20px" }}>
-                    <h1 style={{ fontFamily: "DM Sans", fontWeight: 300 }}>Let’s Build Your Financial Future <br />Together</h1>
-                </div>
-
-
-                <div style={{ width: "80%", height: "400px", margin: "0 140px 80px 140px" }}>
-                    <Form onFinish={onFinish}>
-                        <Row gutter={16}>
-                            <Col span={12}>
-                                <Form.Item name="firstName">
-                                    <Input size="large" placeholder="First Name" allowClear style={{ fontFamily: "DM Sans", border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px", }} />
-                                </Form.Item>
-                            </Col>
-                            <Col span={12}>
-                                <Form.Item name="lastName">
-                                    <Input size="large" placeholder="Last Name" allowClear style={{ fontFamily: "DM Sans", border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px", }} />
-                                </Form.Item>
-                            </Col>
-                            <Col span={24}>
-                                <Form.Item name="email">
-                                    <Input size="large" placeholder="Email" allowClear style={{ fontFamily: "DM Sans", border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px", }} />
-                                </Form.Item>
-                            </Col>
-                            <Col span={24}>
-                                <Form.Item name="message">
-                                    <Input.TextArea size="large" placeholder="Message" allowClear style={{ fontFamily: "DM Sans", resize: "none", height: "194px", border: "1px solid rgba(191, 191, 191, 1)", borderRadius: "4px", }} />
-                                </Form.Item>
-                            </Col>
-                            <Col span={24}>
-                                <Form.Item label={null}>
-                                    <Button type="primary" htmlType="submit" style={{ width: "100%", background: "rgba(207, 152, 44, 1)", fontFamily: "DM Sans", color: "black" }} size="large">
-                                        Send
-                                    </Button>
-                                </Form.Item>
-                            </Col>
-                        </Row>
-                    </Form>
-
-                </div>
+            <div className="form-container">
+                <Form onFinish={onFinish}>
+                    <Row gutter={16}>
+                        <Col span={12}>
+                            <Form.Item name="firstName">
+                                <Input size="large" placeholder="First Name" allowClear />
+                            </Form.Item>
+                        </Col>
+                        <Col span={12}>
+                            <Form.Item name="lastName">
+                                <Input size="large" placeholder="Last Name" allowClear />
+                            </Form.Item>
+                        </Col>
+                        <Col span={24}>
+                            <Form.Item name="email">
+                                <Input size="large" placeholder="Email" allowClear />
+                            </Form.Item>
+                        </Col>
+                        <Col span={24}>
+                            <Form.Item name="message">
+                                <Input.TextArea size="large" placeholder="Message" allowClear />
+                            </Form.Item>
+                        </Col>
+                        <Col span={24}>
+                            <Form.Item label={null}>
+                                <Button type="primary" htmlType="submit" size="large">
+                                    Send
+                                </Button>
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                </Form>
             </div>
         </div>
     )

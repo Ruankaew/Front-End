@@ -152,8 +152,8 @@ export default function Header() {
     if (clickedItem?.path) {
       router.push(clickedItem.path);
       sessionStorage.setItem('active_nav', e.key)
+      setCurrent(e.key);
     }
-    setCurrent(e.key);
   };
 
   const onOpenChange = (keys) => {
@@ -203,41 +203,18 @@ export default function Header() {
         }}
       >
         <Layout className="sticky-header">
-          <Header
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-around',
-              backgroundColor: isSticky ? 'rgb(187 185 185 / 90%)' : '#F8F6F1',
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              right: 0,
-              zIndex: 1000,
-              boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
-              padding: !modeMobile ? '0px 125px' : '0 20px',
-              height: '90px',
-              backdropFilter: isSticky ? 'blur(2px)' : 'none',
-              transition: 'backdrop-filter 0.3s ease',
-            }}
-          >
+          <Header className={isSticky ? 'sticky' : 'not-sticky'}>
             <div class="demo-logo">
               <img
                 src={Image_logo.src}
                 alt="Logo"
-                style={{
-                  width: "70%",
-                  height: "auto",
-                  objectFit: "cover",
-                }}
               />
             </div>
 
-
             <div></div>
             <div></div>
 
-            
+
             <StyledMenu
               theme='light'
               mode="horizontal"
