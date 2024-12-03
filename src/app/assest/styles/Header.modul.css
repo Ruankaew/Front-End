@@ -10,18 +10,8 @@
   overflow: hidden;
   width: 20%;
   height: 75px;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  /* width: 20%;
-  margin-right: 15px;
-  background-image: url(../image/Frame_482199.png);
-  background-size: cover;
-  background-position: center;
-  height: 85px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 @media (max-width: 1620px) {
@@ -30,7 +20,7 @@
     height: 75px;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
   }
 }

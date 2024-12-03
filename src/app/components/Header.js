@@ -215,8 +215,7 @@ export default function Header() {
               right: 0,
               zIndex: 1000,
               boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
-              // padding: !modeMobile ? '0 160px' : '0 20px',
-              padding: !modeMobile ? '0px 100px' : '0 20px',
+              padding: !modeMobile ? '0px 125px' : '0 20px',
               height: '90px',
               backdropFilter: isSticky ? 'blur(2px)' : 'none',
               transition: 'backdrop-filter 0.3s ease',
@@ -230,7 +229,6 @@ export default function Header() {
                   width: "70%",
                   height: "auto",
                   objectFit: "cover",
-                  // borderRadius: "20px"
                 }}
               />
             </div>
@@ -263,11 +261,6 @@ export default function Header() {
                 padding: 0,
               }}
             />
-
-
-            {/* <div></div>
-            <div></div>
-            <div></div> */}
 
             {modeMobile && (
               <>
