@@ -90,6 +90,7 @@ export default function Home() {
                         minHeight: '100vh'
                     }}
                 >
+                    {/* vido Background */}
                     <video
                         style={{
                             position: 'absolute',
@@ -101,7 +102,7 @@ export default function Home() {
                             zIndex: 1,
                             background: "white",
                             opacity: 1,
-                            pointerEvents: "none",
+                            // pointerEvents: "none",
                         }}
                         autoPlay
                         muted
@@ -109,7 +110,7 @@ export default function Home() {
                         preload="auto"
                     >
                         <source
-                            src="https://s3-figma-videos-production-sig.figma.com/video/TEAM/1303741208789463499/53dc876861d197a874a1b9b41335f0655a383695?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MUmEseMWDxa65CnjfvbCdoUUcTLF8fWkON2Fu5pw-s3Id-IpCacoABay88msp8f8rSw1MOK4rx0SWfwGmGYBmnFuWg~Sl2N0WWB-KFZB4m7mildxjL9Lx6HviCixCxpko4kMG7P1lftGjhbzHD7pOTp9o4gB06zN05A~xqCSQektDRmWgWlafuRoh2ZraW08NMD7XbS03qVxfnVOKtUOtcsFIijScJh2nZEXt-7v~mG6EWADmgr789PwvFNFeJSBrhfnlGD1bhGYi0l9PL47b8jGNGPRpgBvInTfOmSKkPUm0Eyokn588fCDgUkULCmnbzjXiZSnDf4bJPDEmd9nYg__"
+                            src="https://s3-figma-videos-production-sig.figma.com/video/TEAM/1303741208789463499/53dc876861d197a874a1b9b41335f0655a383695?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GDyfXPcldacEduTetnSq5PMgtxG3oVVK-rDUAEeegVND5fIp9NISbNbw~nfyMmKVjolVuFnmY1ZymG1CjiSHD0Q34EDCmIFFN1nP61Dw7i5QaWLRYw1WtmswiZiTVObGE8aR14wNQUhuJUvJFuqWm~PpltICzbZ559DL4QmH9MIWKBqlw0YI0mGcCocJQxJMztQ4-0VmJ-0cpxBs8uZ3wG7pvFVUIGchplFh8Zv8LYqeVo3glIMf9-5seab2eMwz2PX982vz3IG38LzdQ4oLHE4zoV4UJfET7UypF2TyASyOt-WtgPnLUoh0MvWghHeoTtNDiLnUMJVMtOhLYqDEGQ__"
                             type="video/mp4"
                         />
                     </video>
