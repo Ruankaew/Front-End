@@ -39,12 +39,7 @@ img, video {
 }
 
 /* Container style */
-.container {
-  display: flex;
-  flex-wrap: wrap; /* Items will wrap to the next row if they don’t fit */
-  justify-content: space-around;
-  gap: 16px;
-}
+
 
 .item {
   flex: 1 1 calc(33.33% - 16px); /* Three items per row */
