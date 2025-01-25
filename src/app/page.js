@@ -10,6 +10,9 @@ import FooterPage from "./contents/FooterPage";
 import ImageGroup from "./assest/image/Group482133.png";
 import ImageCoin from "./assest/image/Mask group.png";
 import ImageStrategicBG from "./assest/image/bg-strategic.png";
+import ImageBgBR from "./assest/image/Group 1.png";
+import ImageObject from "./assest/image/OBJECTS.png";
+// import homePageVideo from "@/app/assest/video/homePageVideo.mp4";
 
 const LineStyle = styled("div")`
   height: 13px;
@@ -111,7 +114,7 @@ export default function Home() {
             preload="auto"
           >
             <source
-              src="https://s3-figma-videos-production-sig.figma.com/video/TEAM/1303741208789463499/53dc876861d197a874a1b9b41335f0655a383695?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GDyfXPcldacEduTetnSq5PMgtxG3oVVK-rDUAEeegVND5fIp9NISbNbw~nfyMmKVjolVuFnmY1ZymG1CjiSHD0Q34EDCmIFFN1nP61Dw7i5QaWLRYw1WtmswiZiTVObGE8aR14wNQUhuJUvJFuqWm~PpltICzbZ559DL4QmH9MIWKBqlw0YI0mGcCocJQxJMztQ4-0VmJ-0cpxBs8uZ3wG7pvFVUIGchplFh8Zv8LYqeVo3glIMf9-5seab2eMwz2PX982vz3IG38LzdQ4oLHE4zoV4UJfET7UypF2TyASyOt-WtgPnLUoh0MvWghHeoTtNDiLnUMJVMtOhLYqDEGQ__"
+              src="/mainVideo.mp4"
               type="video/mp4"
             />
           </video>
@@ -144,12 +147,12 @@ export default function Home() {
               fontWeight: "bold",
             }}
           >
-            <div class="text-container">
-              <h1 class="text_titel" style={{ fontSize: "48px" }}>
+            <div className="text-container">
+              <h1 className="text_titel" style={{ fontSize: "48px" }}>
                 YOUR TRUSTED PARTNER IN
                 <br />
-                <div class="rotating-container">
-                  <span class="rotating-word" key={currentWord}>
+                <div className="rotating-container">
+                  <span className="rotating-word" key={currentWord}>
                     {words[currentWord]}
                   </span>
                 </div>
@@ -255,12 +258,12 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          <div class="divider">
-            <div class="divider-line"></div>
-            <div class="divider-icon">
+          <div className="divider">
+            <div className="divider-line"></div>
+            <div className="divider-icon">
               <img src="/X-Logo.png" width={48} height={48} />
             </div>
-            <div class="divider-line"></div>
+            <div className="divider-line"></div>
           </div>
         </div>
 
@@ -280,7 +283,7 @@ export default function Home() {
             }}
           >
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <div class="content_left">
+              <div className="content_left">
                 <h2
                   style={{
                     color: "rgba(248, 246, 241, 1)",
@@ -314,7 +317,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div class="content_right">
+              <div className="content_right">
                 <img
                   style={{ width: "561px", height: "200px", margin: "30px" }}
                   src={ImageGroup.src}
@@ -322,13 +325,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="services">
-              <div class="service" onClick={"content_financial"}>
+            <div className="services">
+              <div className="service" onClick={"content_financial"}>
                 Financial Advisory (FA)
               </div>
-              <div class="service">Strategic Solutions</div>
-              <div class="service">Business Reorientation</div>
-              <div class="service">Knowledge Sharing</div>
+              <div className="service">Strategic Solutions</div>
+              <div className="service">Business Reorientation</div>
+              <div className="service">Knowledge Sharing</div>
             </div>
           </div>
         </div>
@@ -354,16 +357,16 @@ export default function Home() {
               overflow: "hidden",
             }}
           >
-            <div class="content_financial">
+            <div className="content_financial">
               <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <div class="title">
+                <div className="title">
                   <p>
                     Financial
                     <br />
                     Advisory
                   </p>
                 </div>
-                <div class="description">
+                <div className="description">
                   <p>
                     Our Financial Solutions cover essential services, including
                     Mergers &amp; Acquisitions (M&amp;A), Share Valuation &amp;
@@ -374,23 +377,23 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div class="services_financial">
-                <div class="services_financial_up">
-                  <div class="service-item">
+              <div className="services_financial">
+                <div className="services_financial_up">
+                  <div className="service-item">
                     <span>Initial Public Offerings (IPOs)</span>
                   </div>
-                  <div class="service-item">
+                  <div className="service-item">
                     <span>Initial Public Offerings & Private Placements</span>
                   </div>
                 </div>
-                <div class="services_financial_down">
-                  <div class="service-item">
+                <div className="services_financial_down">
+                  <div className="service-item">
                     <span>Mergers & Acquisitions</span>
                   </div>
-                  <div class="service-item_1">
+                  <div className="service-item_1">
                     <span>Independent Financial Advisory</span>
                   </div>
-                  <div class="service-item">
+                  <div className="service-item">
                     <span>Financial Restructuring</span>
                   </div>
                 </div>
@@ -408,9 +411,9 @@ export default function Home() {
                 <img src="./arrow-white.png" color="white"></img>
               </div>
             </div>
-            <div class="background">
+            <div className="background">
               <img src={ImageCoin.src} alt="Coins" />
-              <div class="gradient-overlay"></div>
+              <div className="gradient-overlay"></div>
             </div>
           </div>
         </div>
@@ -421,7 +424,7 @@ export default function Home() {
         <div
           style={{
             background: "none",
-            marginBottom: "20px",
+            marginBottom: "90px",
             padding: "0 50px",
           }}
         >
@@ -435,7 +438,7 @@ export default function Home() {
               overflow: "hidden",
             }}
           >
-            <div class="content_strategic">
+            <div className="content_strategic">
               <div
                 style={{
                   display: "flex",
@@ -443,8 +446,8 @@ export default function Home() {
                   alignItems: "flex-start",
                 }}
               >
-                <div class="services_strategic">
-                  <div class="service-item-strategic">
+                <div className="services_strategic">
+                  <div className="service-item-strategic">
                     <Button>Consulting</Button>
                     <Button>Business Partnerships</Button>
                     <Button>Business Divestment Strategies</Button>
@@ -452,9 +455,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div class="title-strategic">
+              <div className="title-strategic">
                 <p>Strategic Solutions</p>
-                <div class="des-strategic">
+                <div className="des-strategic">
                   <p>
                     Our Strategic Solutions empower clients to build and enhance
                     their business foundations. We facilitate Business
@@ -470,7 +473,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="bg-strategic">
+            <div className="bg-strategic">
               <img src={ImageStrategicBG.src} alt="Chess-table" />
             </div>
           </div>
@@ -482,13 +485,13 @@ export default function Home() {
         <div
           style={{
             background: "none",
-            marginBottom: "20px",
+            marginBottom: "160px",
             padding: "0 50px",
           }}
         >
           <div
             style={{
-              height: "700px",
+              height: "890px",
               borderRadius: "20px",
               background: "#fffff",
               position: "relative",
@@ -496,43 +499,40 @@ export default function Home() {
               overflow: "hidden",
             }}
           >
-            <div class="content_strategic">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "flex-start",
-                }}
-              >
-                <div class="services_strategic">
-                  <div class="service-item-strategic">
-                    <Button>Consulting</Button>
-                    <Button>Business Partnerships</Button>
-                    <Button>Business Divestment Strategies</Button>
-                    <Button>Environmental, Social, and Governance (ESG)</Button>
-                  </div>
+            <div className="content_business">
+              <div style={{ display: "flex", justifyContent: "space-between" ,gap:"60px"}}>
+                <div className="title-business">
+                  <p>Business
+                    <br />
+                    Reorientation</p>
                 </div>
-              </div>
-              <div class="title-strategic">
-                <p>Business Reorientation</p>
-                <div class="des-strategic">
+                <div className="des-business">
                   <p>
-                    Our Strategic Solutions empower clients to build and enhance
-                    their business foundations. We facilitate Business
-                    Partnerships and develop Business Divestment Strategies that
-                    align with growth objectives. Additionally, we provide
-                    Environmental, Social, and Governance (ESG) Consulting to
-                    help businesses adopt sustainable practices.
+                    Our Financial Solutions cover essential services,
+                    including Mergers & Acquisitions (M&A),
+                    Share Valuation & Feasibility Studies,
+                    and Independent Financial Advisory (IFA).
+                    We guide clients through Initial Public Offerings (IPOs)
+                    and Private Placements (PP), and provide Financial Restructuring strategies.
                   </p>
                 </div>
-                <div>
-                  <img src="/arrow-right.png"></img>
-                </div>
               </div>
+              <div className="services_business">
+                  <div className="service-item-business">
+                    <Button>ESG consulting</Button>
+                    <Button>SDG consulting</Button>
+                    <Button>Digital Transformation</Button>
+                  </div>
+                </div>
+                <div style={{display:"flex",justifyContent:"center",marginRight:"5px"}}>
+                  <img src={ImageObject.src} alt="BGBr"></img></div>
+              <div>
+                  <img src="/arrow-right.png" ></img>
+                </div>
             </div>
 
-            <div class="bg-strategic">
-              <img src={ImageStrategicBG.src} alt="Chess-table" />
+            <div className="bg-business">
+              <img src={ImageBgBR.src} alt="BGBr-table" />
             </div>
           </div>
         </div>
