@@ -74,6 +74,7 @@ export default function Header() {
       key: 'home',
       path: '/'
     },
+    
     {
       label: (
         <>
@@ -266,7 +267,7 @@ export default function Header() {
               <Menu.Item key="contactus">
                 Contact us
               </Menu.Item>
-              <Menu.Item key="contactus">
+              <Menu.Item key="getintouch">
                 <Button
                   style={{
                     backgroundColor: "#CF982C",

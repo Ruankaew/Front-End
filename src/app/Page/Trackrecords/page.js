@@ -29,7 +29,6 @@ export default function TrackrecordsPage() {
                                 <img  src="/TR-Logo-slide2.png" alt="slide-2"/>
                             </div>
                         </Carousel>
-                  
                 </div>
             </div>
             
