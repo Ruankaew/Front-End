@@ -443,7 +443,7 @@ export default function Home() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "flex-start",
+                  alignItems: "start",
                 }}
               >
                 <div className="services_strategic">
